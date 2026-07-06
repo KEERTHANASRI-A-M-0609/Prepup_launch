@@ -1,0 +1,11 @@
+{
+  "Software Engineer": {
+    "requiredTopics": ["Arrays", "Strings", "Linked Lists", "Trees", "Graphs", "Dynamic Programming", "System Design Basics"],
+    "minDSAScore": 70,
+    "minProjectsScore": 60,
+    "minResumeScore": 65,
+    "minCommunicationScore": 70,
+    "minAptitudeScore": 60,
+    "minInterviewScore": 60
+  }
+}

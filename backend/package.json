@@ -1,0 +1,44 @@
+{
+  "name": "prepup-backend",
+  "version": "1.0.0",
+  "description": "PrepUp — Placement Intelligence Platform Backend",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "npx tsx watch src/server.ts",
+    "atlas:network": "npx tsx scripts/open-atlas-network.ts",
+    "dev:python": "cd .. && .venv\\Scripts\\python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000 --app-dir backend",
+    "build": "echo \"PrepUp backend ready\"",
+    "start": "npx tsx src/server.ts",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "nodemailer": "^9.0.1",
+    "tsx": "^4.22.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+}
